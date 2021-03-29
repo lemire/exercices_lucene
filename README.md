@@ -1,4 +1,4 @@
-# exercices_lucene
+# Quelques exercices avec lucene
 Exercises pour s'approprier lucene, le moteur de recherche
 
 
