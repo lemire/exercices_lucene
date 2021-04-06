@@ -29,7 +29,7 @@ public class ajout_stem_frs {
 			// Sélection de l'analyseur par defaut
 			Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_31);
 			// Ajout des documents 
-			IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_46,analyseur);
+			IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_31,analyseur);
 			Directory dir = FSDirectory.open(new File(rep_index));
 			IndexWriter writer = new IndexWriter(dir, conf); 
 		
