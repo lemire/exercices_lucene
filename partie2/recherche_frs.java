@@ -26,12 +26,10 @@ public class recherche_frs {
 			// Identifier le répertoire de l'index
 			String rep_index = ".\\indexfr\\"; 
 			// Sélection de l'analyseur par defaut
-			Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_46);
-			//// Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_46);
-            //// Analyzer analyseur = new EnglishAnalyzer(Version.LUCENE_46);
+			Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_31);
 			// La recherche 
 			String[] champs_recherche = {s_titre, s_auteur, s_contenu}; 
-			QueryParser parser = new MultiFieldQueryParser(Version.LUCENE_46, champs_recherche, analyseur);
+			QueryParser parser = new MultiFieldQueryParser(Version.LUCENE_31, champs_recherche, analyseur);
 
     		BufferedReader in = null;
 			// Boucle permettant de faire plusieurs recherches

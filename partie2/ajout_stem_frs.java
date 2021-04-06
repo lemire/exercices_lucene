@@ -27,9 +27,7 @@ public class ajout_stem_frs {
 			// Identifier le répertoire de l'index
 			String rep_index = ".\\indexfr\\"; 
 			// Sélection de l'analyseur par defaut
-			Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_46);
-            //// Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_46);
-            //// Analyzer analyseur = new EnglishAnalyzer(Version.LUCENE_46);
+			Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_31);
 			// Ajout des documents 
 			IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_46,analyseur);
 			Directory dir = FSDirectory.open(new File(rep_index));

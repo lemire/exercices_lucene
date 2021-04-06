@@ -28,8 +28,6 @@ public class ajout1 {
 			String rep_index = ".\\index\\"; 
 			// Sélection de l'analyseur par defaut
 			Analyzer analyseur = new StandardAnalyzer(Version.LUCENE_46); 
-            //// Analyzer analyseur = new FrenchAnalyzer(Version.LUCENE_46);
-            //// Analyzer analyseur = new EnglishAnalyzer(Version.LUCENE_46);
 			// Ajout des documents 
 			IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_46,analyseur);
 			Directory dir = FSDirectory.open(new File(rep_index));
