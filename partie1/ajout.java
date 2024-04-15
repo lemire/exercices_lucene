@@ -37,7 +37,7 @@ public class ajout {
 		
 			for(int i = 1; i < doc_contenu.length; i++){ 
 				Document doc = new Document(); 
-				doc.add(new StringField(s_id, "Doc" + i,Field.Store.NO)); 
+				doc.add(new StringField(s_id, "Doc" + i,Field.Store.YES)); 
 				doc.add(new StringField(s_titre, "titre" + i,Field.Store.YES)); 
 				doc.add(new StringField(s_auteur, "auteur" + i,Field.Store.YES)); 
 				doc.add(new TextField(s_contenu, doc_contenu[i],Field.Store.NO)); 
