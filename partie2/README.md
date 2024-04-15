@@ -7,7 +7,7 @@ Windows :
 ❯ javac -cp "*" *.java   
 ❯ java -cp .;"*" ajout1        
 Index créé.
-❯ java -cp .;"*" ajout_eng
+❯ java -cp .;"*" ajout_stem_eng
 Index créé.
 > java -cp .;"*" recherche_eng 
 // tapez "swim"
@@ -25,7 +25,7 @@ Autres systèmes :
 ❯ javac -cp "*" *.java   
 ❯ java -cp .:"*" ajout1        
 Index créé.
-❯ java -cp .:"*" ajout_eng
+❯ java -cp .:"*" ajout_stem_eng
 Index créé.
 > java -cp .:"*" recherche_eng 
 // tapez "swim"
